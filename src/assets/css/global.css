@@ -1,0 +1,7 @@
+@import url(./sidebar/sidebar.css);
+@import url(./resets.css);
+@import url(./header/header.css);
+
+.flex {
+  display: flex;
+}

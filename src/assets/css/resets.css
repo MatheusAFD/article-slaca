@@ -1,0 +1,18 @@
+html,
+h1,
+h2,
+h3,
+li,
+ul,
+body,
+nav,
+p {
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  /* font-size: initial; */
+  font-weight: normal;
+}
