@@ -12,7 +12,7 @@ export function MainContent() {
             Análise sensorial de preparações funcionais desenvolvidas para
             escolares <br /> entre 09 e 15 anos, do município de Campinas/SP{" "}
           </h2>
-          <img className="mt-2" src={video} alt="" />
+          <img className="mt-2 img-video" src={video} alt="" />
         </div>
         <aside className="aside-content">
           <div className="aside-content-buttons">

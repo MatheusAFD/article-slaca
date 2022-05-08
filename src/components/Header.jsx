@@ -6,7 +6,7 @@ export function InfoHeader(props) {
 
 export function Header() {
   return (
-    <header className="header main-container">
+    <header className="header header-bg main-container">
       <div className="header-titulo">
         <InfoHeader
           className="font-1-xs"

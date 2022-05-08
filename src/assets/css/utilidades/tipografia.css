@@ -31,12 +31,13 @@
 }
 .font-4-t {
   font: 500 0.875rem/1.5625 "Roboto", sans-serif;
-  color: rgba(237, 120, 57, 1);
+  color: #ed7839;
   text-transform: uppercase;
   text-align: right;
   margin-top: 12px;
   letter-spacing: 0.05em;
 }
+
 .card-tipografia {
   font-family: "Quicksand";
   font-weight: 400;
@@ -46,7 +47,6 @@
   color: #5c5c5c;
   line-height: 180%;
 }
-
 .resumo-tipografia {
   height: calc(114px + 15px);
   white-space: nowrap;
@@ -63,8 +63,48 @@
   max-width: calc(1058px - 30px);
   padding: 15px 15px;
   display: block;
-
-  border: 1px solid #ececec;
-  border-radius: 3px 3px 0px 0px;
   cursor: pointer;
+}
+
+.button-enviar-topico {
+  font: 700 0.9rem/1.35 "Quicksand";
+  color: #ffffff;
+}
+.title-discussao {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ed7839;
+}
+.text-discussao {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #595959;
+}
+.orange {
+  color: #ed7839;
+  text-decoration-line: underline;
+}
+.topico-titulo {
+  font: 700 1rem/1.35 "Roboto", sans-serif;
+  color: #ed7839;
+}
+.feedback-button {
+  font: 700 1rem/1.35 "Quicksand", sans-serif;
+}
+.topico-duvida {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #5c5c5c;
+  display: flex;
+  justify-content: center;
 }

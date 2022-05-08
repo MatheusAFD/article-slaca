@@ -1,7 +1,14 @@
 body {
   padding-bottom: 1000px;
 }
-
+@media (max-width: 900px) {
+  .resumo {
+    width: 50%;
+  }
+  .resumo .h3titulo {
+    width: calc(100% - 4%);
+  }
+}
 .h3titulo {
   display: flex;
   width: calc(1058px - 15px);
