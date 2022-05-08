@@ -13,9 +13,13 @@ p {
 
 a {
   text-decoration: none;
-  /* font-size: initial; */
+
   font-weight: inherit;
   color: inherit;
+}
+a:active {
+  color: inherit;
+  text-decoration: none;
 }
 button {
   border: none;
@@ -23,6 +27,7 @@ button {
 }
 button:hover {
   filter: contrast(200%);
+  color: #fff;
 }
 img {
   max-width: 100%;

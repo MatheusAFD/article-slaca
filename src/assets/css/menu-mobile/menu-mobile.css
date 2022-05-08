@@ -2,10 +2,9 @@
   background: linear-gradient(180deg, #ffb354 0%, #ee7a3a 100%);
 }
 .nav-link {
-  color: #fff !important;
+  color: #fff;
 }
 .navbar-toggler-icon:active {
-  border-color: blue;
 }
 .header__button {
   width: var(--header-height);
