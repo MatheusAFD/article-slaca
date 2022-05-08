@@ -1,0 +1,25 @@
+.nav-bg {
+  background: linear-gradient(180deg, #ffb354 0%, #ee7a3a 100%);
+}
+.nav-link {
+  color: #fff !important;
+}
+.navbar-toggler-icon:active {
+  border-color: blue;
+}
+.header__button {
+  width: var(--header-height);
+  flex-shrink: 0;
+  background: none;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+.header__button:active {
+  box-shadow: 0 0 0 0;
+  border: none;
+}
+.navbar-toggler {
+  border: none !important;
+}

@@ -19,6 +19,10 @@ a {
 }
 button {
   border: none;
+  cursor: pointer;
+}
+button:hover {
+  filter: contrast(200%);
 }
 img {
   max-width: 100%;

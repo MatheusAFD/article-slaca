@@ -7,7 +7,7 @@ export function MainContent() {
   return (
     <main className="main-container mt-2">
       <section className="center-content">
-        <div>
+        <div className="video-player">
           <h2 className="font-1-m">
             Análise sensorial de preparações funcionais desenvolvidas para
             escolares <br /> entre 09 e 15 anos, do município de Campinas/SP{" "}

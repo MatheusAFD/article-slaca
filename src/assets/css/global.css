@@ -7,6 +7,7 @@
 @import url(./main-content/resumo.css);
 @import url(./main-content/discussao.css);
 @import url(./feedback/feedback-topico.css);
+@import url(./menu-mobile/menu-mobile.css);
 
 /* Tipografia */
 @import url(./utilidades/tipografia.css);

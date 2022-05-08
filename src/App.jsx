@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Sidebar } from "./components/Sidebar";
 import { Trabalhos } from "./pages/Trabalhos";
 import "./assets/css/global.css";
+import { MenuMobile } from "./components/MenuMobile";
 
 export function App() {
   const [isMobile, setIsMobile] = useState(false);
@@ -13,9 +14,13 @@ export function App() {
 
   return (
     <div className="grid">
-      {!returnMobile && (
+      {!returnMobile ? (
         <>
           <Sidebar />
+        </>
+      ) : (
+        <>
+          <MenuMobile />
         </>
       )}
 
