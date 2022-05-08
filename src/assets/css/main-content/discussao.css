@@ -1,0 +1,106 @@
+.discussao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.discussao-icons {
+  display: flex;
+  gap: 50px;
+}
+
+.discussao-button-criar {
+  background: linear-gradient(180deg, #feb254 0%, #f0813d 100%);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 4px;
+  color: #ffffff;
+  width: 133px;
+  height: 32px;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+}
+hr {
+  position: absolute;
+  width: 1027px;
+  background-color: #e7e7e7;
+  z-index: -1;
+  height: 1px;
+  border-style: none;
+}
+.enviar-duvida {
+  padding-bottom: 200px;
+}
+
+.enviar-duvida label {
+  display: block;
+}
+
+.enviar-duvida input {
+  width: 1020px;
+  height: 39px;
+}
+.enviar-duvida textarea {
+  width: 1020px;
+  height: 113px;
+  resize: none;
+  position: relative;
+}
+.enviar-duvida textarea:focus,
+input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+.topico-formatacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 99;
+  width: 1025px;
+  height: 31px;
+  background-color: #eaf1f2;
+  margin-top: -36.5px;
+  border-top: 1px solid #cccccc;
+  border: 1px solid #cccccc;
+  border-left: none;
+  border-radius: 4px;
+}
+.topico-formatacao .icons {
+  padding-left: 30px;
+  display: flex;
+  gap: 25px;
+}
+
+#input01,
+#input02 {
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+}
+
+input[type="text"]::placeholder {
+  /* Firefox, Chrome, Opera */
+  padding-left: 23px;
+}
+
+input[type="submit"]:focus {
+  box-shadow: 0 0 0 0;
+  border: none;
+  outline: 0;
+}
+.topico-enviar {
+  box-shadow: 0 0 0 0;
+  border: none;
+  outline: 0;
+  max-width: 205px;
+  max-height: 31px;
+  background: linear-gradient(180deg, #feb154 0%, #f1833e 100%);
+  border-radius: 0px 0px 4px 0px;
+}

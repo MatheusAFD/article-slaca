@@ -13,7 +13,7 @@ export function Sidebar() {
     <nav>
       <ul className="sidebar">
         <div>
-          <ItemLi name="slaca 2019" className="titulo" />
+          <ItemLi name="slaca 2019" className="titulo font-3-m-b" />
           <li>
             <img src={Logo} alt="logo-site" />
           </li>

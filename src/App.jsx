@@ -1,15 +1,25 @@
 import { useState } from "react";
 import { Sidebar } from "./components/Sidebar";
-import { Container } from "./components/Container";
+import { Trabalhos } from "./pages/Trabalhos";
 import "./assets/css/global.css";
 
 export function App() {
-  const [count, setCount] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+  const returnMobile = window.screen.width < 900 ? true : false;
+  function returnIsMobile() {
+    setIsMobile(returnMobile);
+  }
+  window.addEventListener("resize", returnIsMobile);
 
   return (
     <div className="grid">
-      <Sidebar />
-      <Container />
+      {!returnMobile && (
+        <>
+          <Sidebar />
+        </>
+      )}
+
+      <Trabalhos />
     </div>
   );
 }
