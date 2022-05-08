@@ -8,6 +8,7 @@ export function Topico() {
   const [isShowFeedback, setIsShowFeedback] = useState(false);
   function showFeedback() {
     setIsShowFeedback(!isShowFeedback);
+    console.log(isShowFeedback);
   }
 
   return (
