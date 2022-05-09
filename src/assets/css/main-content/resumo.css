@@ -1,23 +1,19 @@
 body {
   padding-bottom: 1000px;
 }
-@media (max-width: 900px) {
-  .resumo {
-    width: 50%;
-  }
-  .resumo .h3titulo {
-    width: calc(100% - 4%);
-  }
+.anime {
+  animation: go-back 0.5s;
 }
+
 .h3titulo {
   display: flex;
-  width: calc(1058px - 15px);
+  width: clamp(100%, 100%, 1058px);
   align-items: center;
   height: 45px;
   background: #fdf1eb;
   border-bottom: 1px solid #ececec;
   border-radius: 3px 3px 0px 0px;
-  padding-left: 15px;
+
   padding-left: 15px;
   font-family: "Roboto";
   font-weight: 500;

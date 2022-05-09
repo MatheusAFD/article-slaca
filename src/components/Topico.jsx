@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Feedback } from "./FeedbackTopico";
 
 import italico from "../assets/icons/negrito.png";
@@ -13,10 +13,13 @@ export function Topico() {
 
   return (
     <>
-      {isShowFeedback && <Feedback />}
-      <div className="enviar-duvida sombra ml-2">
-        {!isShowFeedback && (
-          <>
+      {isShowFeedback ? (
+        <React.Fragment>
+          <Feedback />
+        </React.Fragment>
+      ) : (
+        <React.Fragment>
+          <div className="enviar-duvida sombra mll-2 anime ">
             <p className="topico-duvida mt-2">
               Tem uma dúvida ou sugestão? Compartilhe seu feedback com os
               autores!
@@ -51,9 +54,16 @@ export function Topico() {
                 </div>
               }
             </div>
-          </>
+          </div>
+        </React.Fragment>
+      )}
+
+      {/* {isShowFeedback && <Feedback />}
+      <div className="enviar-duvida sombra mll-2">
+        {!isShowFeedback && (
+          
         )}
-      </div>
+      </div> */}
     </>
   );
 }

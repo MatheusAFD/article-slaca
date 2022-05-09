@@ -1,3 +1,7 @@
+.section {
+  width: clamp(380px, 100%, 1058px);
+  position: relative;
+}
 .discussao {
   display: flex;
   flex-direction: column;
@@ -20,21 +24,46 @@
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
-  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5px;
   position: relative;
 }
+
 hr {
   position: absolute;
-  width: 1027px;
+  width: clamp(280px, 100%, 970px);
+  background-color: #000;
+  z-index: -1;
+  bottom: 0;
+  border: 1px solid #e7e7e7;
+}
+.criar-topico {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  position: relative;
+  justify-content: right;
+  align-items: center;
+}
+.criar-topico input {
+  z-index: 1;
+}
+.criar-topico img {
+  position: relative;
+  z-index: 2;
+  top: 3px;
+  left: 20px;
+  right: -20px;
+}
+/* hr {
+  position: absolute;
+  width: calc(1057px - 60px);
   background-color: #e7e7e7;
   z-index: -1;
   height: 1px;
   border-style: none;
-}
+} */
 .enviar-duvida {
   padding-bottom: 200px;
 }
@@ -44,7 +73,7 @@ hr {
 }
 
 .enviar-duvida input {
-  width: 1020px;
+  width: clamp(100px, 100%, 205px);
   height: 39px;
 }
 .enviar-duvida textarea {
@@ -64,16 +93,15 @@ input:focus {
   justify-content: space-between;
   position: relative;
   z-index: 99;
-  width: 1025px;
+  width: clamp(90%, 100%, 970px);
   height: 31px;
   background-color: #eaf1f2;
   margin-top: -36.5px;
-  border-top: 1px solid #cccccc;
   border: 1px solid #cccccc;
-  border-left: none;
   border-radius: 4px;
 }
 .topico-formatacao .icons {
+  width: clamp(100px, 100%, 100%);
   padding-left: 30px;
   display: flex;
   gap: 25px;
@@ -83,6 +111,7 @@ input:focus {
 #input02 {
   border: 1px solid #cccccc;
   border-radius: 3px;
+  width: clamp(90%, 100%, 970px);
 }
 
 input[type="text"]::placeholder {
@@ -99,7 +128,7 @@ input[type="submit"]:focus {
   box-shadow: 0 0 0 0;
   border: none;
   outline: 0;
-  max-width: 205px;
+  width: clamp(100px, 100%, 150px);
   max-height: 31px;
   background: linear-gradient(180deg, #feb154 0%, #f1833e 100%);
   border-radius: 0px 0px 4px 0px;

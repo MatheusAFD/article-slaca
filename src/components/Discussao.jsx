@@ -17,11 +17,11 @@ export function Discussao() {
   }
 
   return (
-    <section className="main-container mt-3 ">
+    <section className="main-container mt-3 section">
       <h3 className="h3titulo sombra ">Discussões</h3>
 
       {isCreateTopic && <Topico />}
-      <div className="discussao sombra">
+      <div className="discussao sombra ">
         {!isCreateTopic && (
           <>
             <h4 className="title-discussao">
@@ -37,16 +37,18 @@ export function Discussao() {
               cultural é a curiosidade? <br /> Deixe seus questionamentos ou
               sugestões para o autor!
             </p>
-            <div>
-              <button
+            <div className="criar-topico">
+              <img src={criar} alt="" />
+              <input
                 onClick={handleToggleShow}
                 className="mt-2 discussao-button-criar"
+                type="submit"
+                value="criar tópico"
               >
-                <img src={criar} alt="" />
-                <hr />
-                criar tópico
-              </button>
+                {/* <p>a</p> */}
+              </input>
             </div>
+            <hr />
           </>
         )}{" "}
       </div>
