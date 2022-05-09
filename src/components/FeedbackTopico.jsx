@@ -1,18 +1,22 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Topico } from "./Topico";
 
 export function Feedback() {
   const [isReturnTopico, setIsReturnTopico] = useState(false);
   function returnTopico() {
     setIsReturnTopico(!isReturnTopico);
+    console.log("trocou");
   }
 
   return (
     <>
-      {isReturnTopico && <Topico />}
-      <div className="feedback-topico sombra">
-        {!isReturnTopico && (
-          <>
+      {isReturnTopico ? (
+        <React.Fragment>
+          <Topico />
+        </React.Fragment>
+      ) : (
+        <React.Fragment>
+          <div className="feedback-topico sombra anime">
             <h4 className="title-discussao mt-2">
               Seu tópico foi enviado com sucesso! :D
             </h4>
@@ -23,15 +27,15 @@ export function Feedback() {
             <a href="" className="mt-3 text-discussao orange">
               Descubra outros trabalhos!
             </a>
-            <button
+            <input
               onClick={returnTopico}
               className="mt-4 feedback-button-topico feedback-button"
-            >
-              criar novo tópico
-            </button>
-          </>
-        )}
-      </div>
+              type="submit"
+              value="criar novo tópico"
+            />
+          </div>
+        </React.Fragment>
+      )}
     </>
   );
 }

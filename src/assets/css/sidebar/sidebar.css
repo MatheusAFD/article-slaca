@@ -10,7 +10,7 @@
     display: none;
   }
 }
-.titulo {
+.titulo a {
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
