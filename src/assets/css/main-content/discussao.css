@@ -33,11 +33,16 @@
 
 hr {
   position: absolute;
-  width: clamp(280px, 100%, 970px);
+  width: clamp(280px, 85%, 970px);
   background-color: #000;
   z-index: -1;
   bottom: 0;
   border: 1px solid #e7e7e7;
+}
+@media (max-width: 900px) {
+  hr {
+    bottom: 10px;
+  }
 }
 .criar-topico {
   display: grid;

@@ -6,19 +6,18 @@ export function MenuMobile() {
       <nav class="navbar navbar-expand-lg navbar-light bg-light nav-bg">
         <ItemLi name="slaca 2019" className="titulo font-3-m-b" />
 
-        <button
-          class="navbar-toggler"
+        <i
+          class="navbar-toggler header__button material-icons"
           type="button"
           data-toggle="collapse"
           data-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          id="btnNav"
         >
-          <button class="header__button" id="btnNav" type="button">
-            <i class="material-icons">menu</i>
-          </button>
-        </button>
+          menu
+        </i>
 
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">

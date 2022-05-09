@@ -20,7 +20,6 @@
   height: 68px;
   background: linear-gradient(180deg, #ffb354 0%, #ee7a3a 100%);
   color: #ffffff !;
-  text-decoration: none !important;
 }
 
 .nav li a {
@@ -36,7 +35,6 @@
   font-weight: 500;
   position: relative;
   font-size: 15px;
-  text-decoration: none;
 }
 .efeito {
   background-color: #fdf1eb;

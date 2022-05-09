@@ -6,13 +6,34 @@ import negrito from "../assets/icons/italico.png";
 
 export function Topico() {
   const [isShowFeedback, setIsShowFeedback] = useState(false);
-  function showFeedback() {
+  const [subject, setSubject] = useState("");
+  const [content, setContent] = useState("");
+
+  const [topicList, setTopicList] = useState([
+    {
+      subject: "Big dicks",
+      content: "no 30cm dicks allowed",
+    },
+    {
+      subject: "Big dicks",
+      content: "no 30cm dicks allowed",
+    },
+  ]);
+
+  function handleAddTopic() {
+    let topic = {
+      Subject: subject,
+      Content: content,
+    };
+
+    setTopicList([...topicList, topic]);
     setIsShowFeedback(!isShowFeedback);
-    console.log(isShowFeedback);
   }
 
+  console.log(topicList);
+
   return (
-    <>
+    <React.Fragment>
       {isShowFeedback ? (
         <React.Fragment>
           <Feedback />
@@ -29,6 +50,7 @@ export function Topico() {
                 Assunto
               </label>
               <input
+                onChange={(e) => setSubject(e.target.value)}
                 type="text"
                 id="input01"
                 placeholder="Defina um tópico sucinto para notificar os autores..."
@@ -38,7 +60,13 @@ export function Topico() {
               <label htmlFor="input02" className="topico-titulo">
                 Conteudo
               </label>
-              <textarea name="" id="input02" cols="30" rows="10"></textarea>
+              <textarea
+                onChange={(e) => setContent(e.target.value)}
+                name=""
+                id="input02"
+                cols="30"
+                rows="10"
+              ></textarea>
               {
                 <div className="topico-formatacao">
                   <div className="icons">
@@ -46,13 +74,16 @@ export function Topico() {
                     <img src={italico} alt="" />
                   </div>
                   <input
-                    onClick={showFeedback}
+                    onClick={handleAddTopic}
                     type="submit"
                     value="Enviar"
                     className="topico-enviar button-enviar-topico"
                   />
                 </div>
               }
+              {topicList.map((topic, key) => {
+                return <p> {topic.Content}</p>;
+              })}
             </div>
           </div>
         </React.Fragment>
@@ -64,6 +95,6 @@ export function Topico() {
           
         )}
       </div> */}
-    </>
+    </React.Fragment>
   );
 }
