@@ -2,6 +2,10 @@
   font: 400 0.875rem/1.35 "Roboto", sans-serif;
   color: #725c5c;
 }
+.font-1-xs-b {
+  font: 700 0.875rem/1.35 "Roboto", sans-serif;
+  color: #ed7839;
+}
 .font-2-xs {
   font: 400 0.875rem/1.35 "Quicksand", sans-serif;
   color: #725c5c;
@@ -11,13 +15,25 @@
   font: 400 0.8rem/1.35 "Quicksand", sans-serif;
   color: #333333;
 }
+.font-1-name {
+  font: 500 0.8rem/1.35 "Quicksand", sans-serif;
+  color: #5c5c5c;
+}
+.font-1-name-b {
+  font: 700 0.8rem/1.35 "Quicksand", sans-serif;
+  color: #5c5c5c;
+}
+.font-1-autor {
+  font: 700 0.8rem/1.35 "Quicksand", sans-serif;
+  color: #5c5c5c;
+}
 .font-3-xs {
   font: 400 0.9rem/1.35 "Quicksand", sans-serif;
   color: #333333;
 }
 .font-1-m {
   font: 900 1.25rem/1.35 "Roboto", sans-serif;
-  color: rgba(237, 120, 57, 1);
+  color: #ed7839;
   letter-spacing: 0.05em;
 }
 
@@ -63,7 +79,22 @@
   max-width: calc(1058px - 30px);
   padding: 15px 15px;
   display: block;
-  cursor: pointer;
+}
+.tipografia-ans {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #4d4d4d;
+  max-width: calc(1058px - 30px);
+  padding: 15px 15px;
+  display: block;
+}
+@media (max-width: 800px) {
+  .title-discussao {
+    font-size: 14px;
+  }
 }
 
 .button-enviar-topico {
@@ -72,7 +103,6 @@
 }
 .title-discussao {
   font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
@@ -107,4 +137,5 @@
   color: #5c5c5c;
   display: flex;
   justify-content: center;
+  text-align: center;
 }

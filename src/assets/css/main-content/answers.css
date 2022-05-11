@@ -1,0 +1,53 @@
+.question {
+  background: #ffffff;
+  border: 1px solid #e7e7e7;
+  border-radius: 4px;
+  width: clamp(70%, 97.5%, 1028px);
+  height: clamp(131px, 131px, auto);
+}
+.left {
+  margin-left: 15px;
+}
+.acoes {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.acoes span {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #757575;
+}
+
+.answer-justify {
+  display: flex;
+  justify-content: space-between;
+}
+.answerCheckDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-right: 25px;
+}
+
+.answer-content {
+}
+
+.answers {
+  background: #ffffff;
+  border: 1px solid #e7e7e7;
+  border-radius: 4px;
+  width: clamp(70%, 97.5%, 1028px);
+  height: clamp(131px, 131px, auto);
+}
+.answers.author {
+  background: #f8f8f8 !important;
+  border: 1px solid #e7e7e7;
+  border-radius: 4px;
+  width: clamp(70%, 97.5%, 1028px);
+  height: clamp(131px, 131px, 131px);
+}

@@ -1,11 +1,11 @@
 .header {
   display: flex;
   min-width: 100%;
-  height: 68px;
+  height: clamp(68px, 100%, auto);
   background-color: #fdf1eb;
   box-sizing: border-box;
-  align-items: center;
 }
+
 @media (max-width: 900px) {
   .header-bg {
   }
@@ -26,15 +26,16 @@
     display: none;
   }
   .header-login {
-    margin-left: 0px !important;
     display: flex;
+    flex-direction: column;
     gap: 10px;
     align-items: center;
   }
   .header-login p {
   }
-  .header-login-img,
-  .header-login-img img {
+
+  .header-login img {
+    order: 0;
     margin-left: 0px !important;
   }
   .header-login-img::after {

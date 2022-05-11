@@ -11,11 +11,11 @@ export function Feedback() {
   return (
     <>
       {isReturnTopico ? (
-        <React.Fragment>
+        <>
           <Topico />
-        </React.Fragment>
+        </>
       ) : (
-        <React.Fragment>
+        <>
           <div className="feedback-topico sombra anime">
             <h4 className="title-discussao mt-2">
               Seu tópico foi enviado com sucesso! :D
@@ -34,7 +34,7 @@ export function Feedback() {
               value="criar novo tópico"
             />
           </div>
-        </React.Fragment>
+        </>
       )}
     </>
   );

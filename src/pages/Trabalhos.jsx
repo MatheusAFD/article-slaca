@@ -6,7 +6,6 @@ import { Discussao } from "../components/Discussao";
 export function Trabalhos() {
   return (
     <div>
-      {}
       <Header className="colum-2" />
       <MainContent className="colum-2" />
       <Resumo />

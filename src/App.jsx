@@ -10,7 +10,7 @@ export function App() {
   function returnIsMobile() {
     setIsMobile(returnMobile);
   }
-  window.addEventListener("resize", returnIsMobile);
+  document.addEventListener("resize", returnIsMobile);
 
   return (
     <div className="grid">

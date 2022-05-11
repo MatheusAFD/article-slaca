@@ -7,7 +7,10 @@ export function Resumo() {
   }
 
   return (
-    <div className="main-container mt-3 resumo " onClick={handleToggleShow}>
+    <div
+      className="main-container mt-3 resumo pointer"
+      onClick={handleToggleShow}
+    >
       <h3 className="h3titulo sombra">Resumo</h3>
 
       <span className=" tipografia sombra ">
