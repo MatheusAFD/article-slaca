@@ -11,12 +11,12 @@ export function Topico() {
 
   const [topicList, setTopicList] = useState([
     {
-      subject: "Big dicks",
-      content: "no 30cm dicks allowed",
+      subject: "a",
+      content: "a",
     },
     {
-      subject: "Big dicks",
-      content: "no 30cm dicks allowed",
+      subject: "a",
+      content: "a",
     },
   ]);
 
@@ -33,13 +33,13 @@ export function Topico() {
   console.log(topicList);
 
   return (
-    <React.Fragment>
+    <>
       {isShowFeedback ? (
-        <React.Fragment>
+        <>
           <Feedback />
-        </React.Fragment>
+        </>
       ) : (
-        <React.Fragment>
+        <>
           <div className="enviar-duvida sombra mll-2 anime ">
             <p className="topico-duvida mt-2">
               Tem uma dúvida ou sugestão? Compartilhe seu feedback com os
@@ -86,7 +86,7 @@ export function Topico() {
               })}
             </div>
           </div>
-        </React.Fragment>
+        </>
       )}
 
       {/* {isShowFeedback && <Feedback />}
@@ -95,6 +95,6 @@ export function Topico() {
           
         )}
       </div> */}
-    </React.Fragment>
+    </>
   );
 }

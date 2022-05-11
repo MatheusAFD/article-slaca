@@ -24,8 +24,6 @@ export function Header() {
       <div className="header-login">
         <p className="font-3-s">Bem vindo!</p>
         <p className="font-3-xs">alguem12@galoascience.com</p>
-      </div>
-      <div className="header-login-img">
         <img src={profilepic} alt="Foto de perfil" />
       </div>
     </header>
