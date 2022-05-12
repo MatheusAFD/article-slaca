@@ -57,3 +57,7 @@ Start the server
 **Client:** HTML, CSS, React
 
 **Server:** Node
+
+## deployed project at
+
+- [Netily](https://slaca-matheusafd.netlify.app/)
