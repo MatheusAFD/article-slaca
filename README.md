@@ -60,4 +60,4 @@ Start the server
 
 ## deployed project at
 
-- [Netily](https://slaca-matheusafd.netlify.app/)
+- [netlify](https://slaca-matheusafd.netlify.app/)
