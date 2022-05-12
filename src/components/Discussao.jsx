@@ -11,6 +11,7 @@ import criar from "../assets/icons/criar.png";
 export function Discussao() {
   const [isCreateTopic, setIsCreateTopic] = useState(false);
   const [isShowAnswer, setIsShowAnswer] = useState(false);
+  const [IS_SHOW_TOPIC_ADDED, SET_IS_SHOW_TOPIC_ADDED] = useState(false);
 
   function handleShowAnswer() {
     setIsShowAnswer(!isShowAnswer);
@@ -18,6 +19,9 @@ export function Discussao() {
 
   function handleToggleShow() {
     setIsCreateTopic(!isCreateTopic);
+  }
+  function isShowTopicAdded() {
+    SET_IS_SHOW_TOPIC_ADDED(true);
   }
 
   return (
@@ -51,10 +55,21 @@ export function Discussao() {
               >
                 {/* <p>a</p> */}
               </input>
-              <hr />
+              <hr className="hr" />
             </div>
           </>
-        )}{" "}
+        )}
+        {IS_SHOW_TOPIC_ADDED && (
+          <>
+            <Questions
+              subject="Dúvida sobre data do evento"
+              user="Carlos Henrique Santos"
+              content="Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo..."
+              likes="1"
+              answers="1"
+            />
+          </>
+        )}
         <Questions
           subject="Dúvida sobre data do evento"
           user="Carlos Henrique Santos"

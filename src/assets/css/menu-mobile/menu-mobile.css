@@ -1,3 +1,11 @@
+@media (min-width: 900px) {
+  .navbar {
+    display: none;
+  }
+}
+.nav-item a {
+  color: #ffffff !important;
+}
 .nav-bg {
   background: linear-gradient(180deg, #ffb354 0%, #ee7a3a 100%);
 }

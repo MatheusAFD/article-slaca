@@ -3,11 +3,13 @@ import { Feedback } from "./FeedbackTopico";
 
 import italico from "../assets/icons/negrito.png";
 import negrito from "../assets/icons/italico.png";
+import checkG from "../assets/icons/checkG.png";
 
 export function Topico() {
   const [isShowFeedback, setIsShowFeedback] = useState(false);
   const [subject, setSubject] = useState("");
   const [content, setContent] = useState("");
+  const [IS_SHOW_TOPIC_ADDED, SET_IS_SHOW_TOPIC_ADDED] = useState(false);
 
   const [topicList, setTopicList] = useState([
     {
@@ -25,11 +27,15 @@ export function Topico() {
       Subject: subject,
       Content: content,
     };
+    isShowTopicAdded();
 
     setTopicList([...topicList, topic]);
     setIsShowFeedback(!isShowFeedback);
   }
 
+  function isShowTopicAdded() {
+    SET_IS_SHOW_TOPIC_ADDED(true);
+  }
   console.log(topicList);
 
   return (
@@ -37,6 +43,31 @@ export function Topico() {
       {isShowFeedback ? (
         <>
           <Feedback />
+          {IS_SHOW_TOPIC_ADDED && (
+            <>
+              <div className="blur-div">
+                <div className="content-blur">
+                  <img src={checkG} alt="" />
+                  <p className="font-1-feedback ">
+                    Aguardando feedback dos autores
+                  </p>
+                  <h5 className="text-discussao orange">Editar tópico</h5>
+                </div>
+                <div className="mt-3 question pointer mb-2 filter-topic ">
+                  <h4 className="title-discussao mt-2 left">Assunto aqui</h4>
+                  <p className="left font-1-name">Usuario aqui</p>
+                  <p className="tipografia blur-content">Conteudo aqui</p>
+                  <div className="acoes left mb-2">
+                    <span>0 likes</span>
+                    <span>0 respostas</span>
+                  </div>
+                </div>
+              </div>
+            </>
+          )}
+          {/* <div className="main-container mt-3 question pointer mb-2">
+            <></>
+          </div> */}
         </>
       ) : (
         <>
@@ -88,13 +119,6 @@ export function Topico() {
           </div>
         </>
       )}
-
-      {/* {isShowFeedback && <Feedback />}
-      <div className="enviar-duvida sombra mll-2">
-        {!isShowFeedback && (
-          
-        )}
-      </div> */}
     </>
   );
 }
