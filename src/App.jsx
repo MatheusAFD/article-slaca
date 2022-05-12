@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Sidebar } from "./components/Sidebar";
 import { Trabalhos } from "./pages/Trabalhos";
 import { MenuMobile } from "./components/MenuMobile";
-import "./assets/css/global.css";
+import "./assets/css/style.min.css";
 
 export function App() {
   return (
