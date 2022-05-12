@@ -5,7 +5,6 @@ export function Feedback() {
   const [isReturnTopico, setIsReturnTopico] = useState(false);
   function returnTopico() {
     setIsReturnTopico(!isReturnTopico);
-    console.log("trocou");
   }
 
   return (

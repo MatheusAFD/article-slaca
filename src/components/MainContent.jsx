@@ -60,32 +60,16 @@ export function MainContent() {
                 ³Instituto Nacional de Pesquisas Espaciais ⁴Universidade Federal
                 do Rio de Janeiro
               </div>
-
-              {/* <div className="card-text-1">
-                <p>
-                  Tipo de Apresentação: <strong>Pôster</strong>
-                </p>
-                <p>
-                  Eixo temático: <strong>Alimentação e saúde (AS)</strong>
-                </p>
-                <p>
-                  Palavras-chaves:
-                  <strong> Alimentos funcionais, alimentação escolar.</strong>
-                </p>
-              </div> */}
-              {/* 
-              <div className="card-text-1">
-                <p>
-                  Tipo de Apresentação: <strong>Pôster</strong>
-                </p>
-                <p>
-                  Eixo temático: <strong>Alimentação e saúde (AS)</strong>
-                </p>
-                <p>
-                  Palavras-chaves:
-                  <strong> Alimentos funcionais, alimentação escolar.</strong>
-                </p>
-              </div> */}
+              <div className="card-text-1  ">
+                Universidade Estadual de Campinas ²Universidade de São Paulo
+                ³Instituto Nacional de Pesquisas Espaciais ⁴Universidade Federal
+                do Rio de Janeiro
+              </div>
+              <div className="card-text-1  ">
+                Universidade Estadual de Campinas ²Universidade de São Paulo
+                ³Instituto Nacional de Pesquisas Espaciais ⁴Universidade Federal
+                do Rio de Janeiro
+              </div>
             </div>
           </div>
         </aside>

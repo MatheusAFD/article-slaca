@@ -5,7 +5,6 @@ export function MenuMobile() {
     <>
       <nav class="navbar navbar-expand-lg navbar-light bg-light nav-bg">
         <ItemLi name="slaca 2019" className="titulo font-3-m-b" />
-
         <i
           class="navbar-toggler header__button material-icons"
           type="button"

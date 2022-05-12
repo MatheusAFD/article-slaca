@@ -23,6 +23,10 @@
   font: 700 0.8rem/1.35 "Quicksand", sans-serif;
   color: #5c5c5c;
 }
+.font-1-feedback {
+  font: 900 0.95rem/1.35 "Quicksand", sans-serif;
+  color: #5c5c5c;
+}
 .font-1-autor {
   font: 700 0.8rem/1.35 "Quicksand", sans-serif;
   color: #5c5c5c;
@@ -44,6 +48,9 @@
 .font-3-m-b {
   font: 700 1.875rem/1.35 "Roboto", sans-serif;
   color: #ffffff;
+}
+.titulo::marker {
+  display: none;
 }
 .font-4-t {
   font: 500 0.875rem/1.5625 "Roboto", sans-serif;
@@ -91,12 +98,6 @@
   padding: 15px 15px;
   display: block;
 }
-@media (max-width: 800px) {
-  .title-discussao {
-    font-size: 14px;
-  }
-}
-
 .button-enviar-topico {
   font: 700 0.9rem/1.35 "Quicksand";
   color: #ffffff;
@@ -116,6 +117,7 @@
   line-height: 19px;
   text-align: center;
   color: #595959;
+  padding: 0px 5px;
 }
 .orange {
   color: #ed7839;
@@ -138,4 +140,16 @@
   display: flex;
   justify-content: center;
   text-align: center;
+}
+@media (max-width: 900px) {
+  .font-1-m {
+    font: 700 1.1rem/1.35 "Roboto", sans-serif;
+    color: #ed7839;
+    letter-spacing: 0.05em;
+    text-align: left;
+  }
+  .title-discussao {
+    font-size: 14px;
+    text-align: center;
+  }
 }

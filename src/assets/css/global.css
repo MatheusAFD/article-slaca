@@ -1,3 +1,4 @@
+/* Margins paddings styles resets */
 @import url(./resets.css);
 
 /* main content */
@@ -9,50 +10,7 @@
 @import url(./feedback/feedback-topico.css);
 @import url(./menu-mobile/menu-mobile.css);
 @import url(./main-content/answers.css);
+@import url(./main-content/footer.css);
 
 /* Tipografia */
 @import url(./utilidades/tipografia.css);
-
-.grid {
-  display: grid;
-  grid-template-columns: 220px 1fr;
-  box-sizing: border-box;
-}
-@media (max-width: 900px) {
-  .grid {
-    display: block;
-    grid-template-columns: 220px 1fr;
-  }
-}
-
-.colum-2 {
-  grid-column: 2;
-}
-.main-container {
-  display: flex;
-  flex-direction: column;
-  padding-left: 44px;
-  width: clamp(480px, 100%, 1058px);
-  overflow: hidden;
-}
-@media (max-width: 900px) {
-  .main-container {
-    width: clamp(380px, 100%, 100%);
-    padding: 10px;
-    margin: 0px;
-  }
-}
-
-.sombra {
-  border: 1px solid #ececec;
-  border-radius: 3px 3px 0px 0px;
-}
-
-@keyframes go-back {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}

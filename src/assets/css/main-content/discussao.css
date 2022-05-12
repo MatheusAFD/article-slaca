@@ -31,7 +31,7 @@
   position: relative;
 }
 
-hr {
+.hr {
   position: absolute;
   width: clamp(920px, 85%, 970px);
   margin-left: -385px;
@@ -40,7 +40,7 @@ hr {
   border: 1px solid #e7e7e7;
 }
 @media (max-width: 1200px) {
-  hr {
+  .hr {
     display: none;
   }
 }
@@ -69,9 +69,6 @@ hr {
   height: 1px;
   border-style: none;
 } */
-.enviar-duvida {
-  padding-bottom: 200px;
-}
 
 .enviar-duvida label {
   display: block;

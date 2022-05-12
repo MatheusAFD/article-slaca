@@ -6,7 +6,7 @@ export function InfoHeader(props) {
 
 export function Header() {
   return (
-    <header className="header header-bg main-container">
+    <header className="header header-bg ">
       <div className="header-titulo">
         <InfoHeader
           className="font-1-xs"
@@ -22,9 +22,17 @@ export function Header() {
         <button className="font-2-xs">PT,BR</button>
       </div>
       <div className="header-login">
-        <p className="font-3-s">Bem vindo!</p>
-        <p className="font-3-xs">alguem12@galoascience.com</p>
-        <img src={profilepic} alt="Foto de perfil" />
+        <div>
+          <p className="font-3-s">Bem vindo!</p>
+          <p className="font-3-xs">alguem12@galoascience.com</p>
+        </div>
+        <div className="header-login-img">
+          <img
+            src={profilepic}
+            alt="Foto de perfil"
+            className="header-login-img"
+          />
+        </div>
       </div>
     </header>
   );
