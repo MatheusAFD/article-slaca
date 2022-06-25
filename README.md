@@ -56,8 +56,7 @@ Start the server
 
 **Client:** HTML, CSS, React
 
-**Server:** Node
 
 ## deployed project at
 
-- [netlify](https://slaca-matheusafd.netlify.app/)
+- [vercel](https://article-slaca.vercel.app/)
